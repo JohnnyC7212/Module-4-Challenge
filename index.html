@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Quiz Challenge </title>
+
+        <link rel="stysheet" href="./Assets/css/style.css">
+
+    </head>
+
+    <body>
+        <div class="scores"><a href="highscores.html">Check Highscores</a></div>
+        <div class="timer">Time: <span id="time">O</span></div>
+
+        <div class="my-wrapper">
+            <div id="start-screen" class="start">
+                <h1> Quiz Challenge </h1>
+                <p>
+                    Answer the questions relating to code within the time limit. For every incorrect answer you will recieve a penalty of 15 seconds. 
+
+                </p>
+                <button id="start">Start Quiz</button>
+            </div>
+            <div id="questions" class="hide">
+                <h2>All done </h2>
+                <p> Your score is <span id="final-score"></span></p>
+                <p>
+                    Enter initals: <input type="text" id="my-initials" maxlength="3" />
+                    <button id="submit">Submit</button>
+                </p>
+            </div>
+            <div id="feedback" class="feedback hide"></div>
+        </div>
+
+        <script src="./Assets/js/questions.js"></script>
+        <script src="./Assets/js/logic.js"></script>
+    </body>
+</html>
